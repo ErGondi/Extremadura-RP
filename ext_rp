@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extremadura RP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background: black;
+      color: #00ff00;
+      overflow-x: hidden;
+    }
+    header {
+      background: black;
+      text-align: center;
+      padding: 5em 1em;
+      animation: flicker 1.5s infinite;
+    }
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px #0f0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      background: #111;
+      padding: 1em;
+    }
+    nav a {
+      color: #0f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: white;
+    }
+    section {
+      display: none;
+      padding: 2em;
+    }
+    .active {
+      display: block;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      background: #000;
+      color: #0f0;
+      border: 1px solid #0f0;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Extremadura RP</h1>
+  </header>
+  <nav>
+    <a href="#" onclick="showSection('normativas')">NORMATIVAS</a>
+    <a href="#" onclick="passwordPrompt('deepweb')">DEEP WEB</a>
+    <a href="#" onclick="passwordPrompt('chat')">CHAT</a>
+  </nav>
+
+  <section id="normativas" class="active">
+    <h2>Normativas</h2>
+    <ul>
+      <li>No hacer metagaming</li>
+      <li>No hacer powergaming</li>
+      <li>Respetar a todos los jugadores</li>
+      <li>Seguir las normas del servidor</li>
+    </ul>
+  </section>
+
+  <section id="deepweb">
+    <h2>Canal Deep Web</h2>
+    <textarea placeholder="Escribe aquí de forma anónima..."></textarea>
+  </section>
+
+  <section id="chat">
+    <h2>Canal de Chat</h2>
+    <textarea placeholder="Escribe tu mensaje..."></textarea>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function passwordPrompt(sectionId) {
+      const pass = prompt("Introduce la contraseña para acceder (pista: número del diablo)");
+      if (pass === "666") {
+        showSection(sectionId);
+      } else {
+        alert("Contraseña incorrecta.");
+      }
+    }
+  </script>
+</body>
+</html>
