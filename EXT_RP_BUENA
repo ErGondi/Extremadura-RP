@@ -1,0 +1,419 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normativas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0a192f;
+            color: #e6f1ff;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .binary-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.15;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #64ffda;
+            line-height: 2;
+            white-space: pre;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: rgba(10, 25, 47, 0.7);
+            backdrop-filter: blur(4px);
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #64ffda;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #64ffda, transparent);
+            margin-top: 10px;
+        }
+
+        .normativa-group {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #ccd6f6;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-left: 3px solid #64ffda;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #64ffda;
+            margin: 10px 0;
+        }
+
+        .normativa-item {
+            background-color: rgba(100, 255, 218, 0.08);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .normativa-item:hover {
+            background-color: rgba(100, 255, 218, 0.15);
+            transform: translateX(5px);
+        }
+
+        .normativa-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #64ffda;
+        }
+
+        .normativa-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #8892b0;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 15px;
+                margin: 0 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="binary-bg" id="binaryBackground"></div>
+
+    <div class="content">
+        <header>
+            <h1>NORMATIVAS</h1>
+        </header>
+
+        <section class="normativa-group">
+            <h2>📘 NORMATIVA GENERAL DEL SERVIDOR DE DISCORD 📘</h2>
+            <p>Bienvenido/a a nuestro servidor. Para mantener un ambiente sano, organizado y respetuoso, es obligatorio cumplir con las siguientes normas:</p>
+
+            <hr>
+            <h3>👤 1. RESPETO ENTRE USUARIOS</h3>
+            <ul>
+                <li>Trátate con respeto con todos los miembros del servidor.</li>
+                <li>No se tolerarán insultos, amenazas, burlas, acoso o toxicidad.</li>
+                <li>Racismo, machismo, xenofobia o cualquier tipo de discriminación será motivo de expulsión directa.</li>
+            </ul>
+
+            <hr>
+            <h3>📛 2. NOMBRES E IMÁGENES</h3>
+            <ul>
+                <li>Nombres de usuario, apodos o fotos de perfil ofensivas, sexuales, provocativas o inapropiadas están prohibidas.</li>
+                <li>El staff podrá pedirte que lo cambies, y si no lo haces, serás sancionado.</li>
+            </ul>
+
+            <hr>
+            <h3>📢 3. SPAM Y PUBLICIDAD</h3>
+            <ul>
+                <li>Está prohibido hacer spam de mensajes, emojis, menciones o enlaces.</li>
+                <li>No se permite hacer publicidad de otros servidores, canales o redes sin permiso del staff.</li>
+            </ul>
+
+            <hr>
+            <h3>🎙️ 4. CANALES DE VOZ</h3>
+            <ul>
+                <li>No hagas ruidos molestos, gritos o música sin consentimiento del canal.</li>
+                <li>Está prohibido el uso de soundboards de forma abusiva o molesta.</li>
+                <li>Respeta el orden y objetivo de cada canal.</li>
+            </ul>
+
+            <hr>
+            <h3>📌 5. USO DE CANALES</h3>
+            <ul>
+                <li>Usa cada canal para su función correspondiente.</li>
+                <li>No desvíes temas ni invadas canales de soporte con mensajes innecesarios.</li>
+                <li>Revisa los fijados si tienes dudas.</li>
+            </ul>
+
+            <hr>
+            <h3>⚠️ 6. PROHIBICIONES GRAVES</h3>
+            <ul>
+                <li>❌ No está permitido compartir contenido NSFW (sexual, gore, violento).</li>
+                <li>❌ No se permite hablar de política extrema, religión ni temas sensibles.</li>
+                <li>❌ Prohibido suplantar a miembros del staff o hacerte pasar por otros.</li>
+            </ul>
+
+            <hr>
+            <h3>👮 7. STAFF Y SANCIONES</h3>
+            <ul>
+                <li>El staff está para ayudarte y hacer cumplir las normas.</li>
+                <li>Las decisiones del staff deben ser respetadas.</li>
+                <li>Si tienes un problema con un miembro del staff, abre un ticket.</li>
+            </ul>
+
+            <hr>
+            <p>💬 <strong>El desconocimiento de las normas no exime de su cumplimiento.</strong> Si tienes dudas, abre un ticket o contacta a un miembro del equipo. ¡Gracias por ser parte de la comunidad y disfruta tu estancia!</p>
+        </section>
+
+        <section class="normativa-group">
+            <h2>🚨 NUEVA NORMATIVA DE FACCIONES ILEGALES 🚨</h2>
+            <p>¡El equipo del staff se complace en anunciar que hemos añadido una <strong>nueva normativa exclusiva para facciones ilegales</strong>!</p>
+            <ul>
+                <li>🔧 <strong>¿Qué incluye esta normativa?</strong></li>
+                <li>• Reglas específicas para el rol ilegal.</li>
+                <li>• Límites y libertades claras para mejorar la experiencia.</li>
+                <li>• Medidas para asegurar un entorno equilibrado y realista.</li>
+            </ul>
+            <p>✅ Entra en vigor desde hoy. Su cumplimiento será supervisado activamente.</p>
+            <p>⚠️ Cualquier infracción será sancionada según la gravedad.</p>
+            <p>Si tienes dudas, contacta al staff antes de actuar fuera de las normas.</p>
+            <p>¡Gracias por contribuir a un rol de calidad! 🔥</p>
+        </section>
+
+        <section class="normativa-group">
+            <h2>📘 NORMATIVA DE BANDAS (FACCIONES ILEGALES)</h2>
+            <p>Esta normativa está diseñada para garantizar un entorno de rol equilibrado, realista y disfrutable para todos los jugadores. Si perteneces o planeas unirte a una banda, debes respetar las siguientes reglas:</p>
+
+            <hr>
+            <h3>🔴 1. CONCEPTO Y FUNCIONAMIENTO</h3>
+            <ul>
+                <li>Una banda debe tener una identidad clara (nombre, colores, zona, rol definido).</li>
+                <li>Toda acción debe tener una justificación <strong>rolística y coherente con la historia del grupo</strong>.</li>
+                <li>Evita comportamientos de “banda genérica” sin sentido (hacer DM sin contexto, guerras sin razón, etc).</li>
+            </ul>
+
+            <hr>
+            <h3>🔫 2. ACCIONES ILEGALES PERMITIDAS</h3>
+            <ul>
+                <li>Robos planeados con rol previo.</li>
+                <li>Ventas y tráfico de armas/drogas.</li>
+                <li>Secuestros justificados.</li>
+                <li>Enfrentamientos por territorio (de forma progresiva y razonada).</li>
+                <li>Extorsión con base de rol.</li>
+            </ul>
+            <p>❗Todo debe desarrollarse con <strong>rol de calidad</strong>. El uso excesivo de la violencia sin contexto será sancionado.</p>
+
+            <hr>
+            <h3>🚫 3. ACCIONES PROHIBIDAS</h3>
+            <ul>
+                <li>DM (Deathmatch): matar sin rol o motivo.</li>
+                <li>PG (Powergaming): realizar acciones imposibles o abusivas.</li>
+                <li>RK/CK sin autorización (Revenge Kill / Character Kill).</li>
+                <li>Invadir zonas sin un conflicto establecido.</li>
+                <li>Usar el rol de banda para generar caos constante.</li>
+            </ul>
+
+            <hr>
+            <h3>👥 4. COMPORTAMIENTO EN EL ROL</h3>
+            <ul>
+                <li>Las bandas deben mantener una jerarquía clara y coherente.</li>
+                <li>Los miembros deben saber rolear tanto en conflictos como en situaciones cotidianas.</li>
+                <li>Se espera un <strong>mínimo de rol social y narrativo</strong>, no solo rol hostil.</li>
+                <li>La vestimenta debe ser coherente con la imagen del grupo.</li>
+            </ul>
+
+            <hr>
+            <h3>📄 5. REGISTRO Y AUTORIZACIÓN</h3>
+            <ul>
+                <li>Para fundar una banda se debe presentar un <strong>proyecto con lore</strong> y estructura interna.</li>
+                <li>El staff debe aprobar la banda antes de que comience su actividad.</li>
+                <li>Las bandas no registradas serán disueltas.</li>
+            </ul>
+
+            <hr>
+            <h3>⚠️ 6. SANCIONES</h3>
+            <ul>
+                <li>Las bandas que incumplan esta normativa serán advertidas, suspendidas o disueltas.</li>
+                <li>Se sancionará a miembros individuales si rompen las reglas.</li>
+            </ul>
+
+            <hr>
+            <h3>✅ 7. RECOMENDACIONES</h3>
+            <ul>
+                <li>Usa el entorno del servidor para crear historias ricas y prolongadas.</li>
+                <li>Coordina con otras bandas y civiles para generar rol conjunto.</li>
+                <li>Cuida la reputación de tu banda dentro y fuera del rol.</li>
+            </ul>
+
+            <hr>
+            <p>**El respeto por esta normativa no solo es obligatorio, sino esencial para una buena experiencia de rol para todos.**</p>
+            <p>|| @everyone ||</p>
+        </section>
+
+        <section class="normativa-group">
+            <h2>🔫 NORMATIVA DE ARMAS 🔫</h2>
+            <p>Para mantener una experiencia de rol justa, equilibrada y realista, el uso de armas dentro del servidor está regulado bajo las siguientes normas obligatorias:</p>
+
+            <hr>
+            <h3>🛒 1. COMPRA DE ARMAS</h3>
+            <ul>
+                <li>Todas las armas deben ser <strong>compradas a través del Discord del servidor</strong>, mediante los canales oficiales de venta.</li>
+                <li>Queda <strong>prohibido</strong> utilizar armas que no hayan sido adquiridas legalmente.</li>
+                <li>Las armas compradas quedan registradas por el staff.</li>
+            </ul>
+
+            <hr>
+            <h3>🎯 2. LÍMITE DE ARMAS</h3>
+            <ul>
+                <li>El servidor <strong>solo permite portar UNA arma a la vez</strong> (por sistema del juego).</li>
+                <li>Está completamente prohibido alternar entre varias armas o simular llevar más de una.</li>
+            </ul>
+
+            <hr>
+            <h3>🎭 3. USO RESPONSABLE</h3>
+            <ul>
+                <li>No es necesario rolear cada vez que sacas el arma.</li>
+                <li>Pero si en rol <strong>te la quitan, se te cae o la pierdes</strong>, <strong>NO puedes volver a sacarla mágicamente</strong> como si aún la tuvieras.</li>
+                <li>➡️ Sacar la <strong>misma arma después de perderla en rol</strong> se considera <strong>romper el rol</strong> y será sancionado.</li>
+                <li>Si pierdes un arma, deberás adquirir una nueva legalmente si deseas volver a tener una.</li>
+            </ul>
+
+            <hr>
+            <h3>🚫 4. PROHIBICIONES</h3>
+            <ul>
+                <li>Prohibido regalar, intercambiar o vender armas sin autorización del staff.</li>
+                <li>El uso de armas para hacer DM, asustar sin motivo o abusar de civiles/nuevos será sancionado.</li>
+            </ul>
+
+            <hr>
+            <h3>⚠️ 5. SANCIONES</h3>
+            <ul>
+                <li>Arma no registrada en dc  →  Sanción directa.</li>
+                <li>Uso indebido tras pérdida en rol → Sanción directa.</li>
+                <li>Reincidencia o mal uso grave → Expulsión del derecho a usar un arma en RP. (Apelable no te alarmes)</li>
+            </ul>
+
+            <hr>
+            <p>🎯 <strong>Recuerda:</strong> portar un arma no es solo un privilegio, es una responsabilidad de rol. Úsala con cabeza y coherencia.</p>
+            <p>|| @everyone ||</p>
+        </section>
+
+        <section class="normativa-group">
+            <h2>📜 NUEVA NORMATIVA DEL SERVIDOR 📜</h2>
+            <p>¡Estamos muy contentos de anunciar que el equipo del staff ha redactado una <strong>nueva normativa</strong> para el servidor!</p>
+            <p><strong>¿Por qué una normativa?</strong></p>
+            <ul>
+                <li>• Queremos promover un ambiente más sano, justo y organizado.</li>
+                <li>• Se han añadido reglas importantes sobre convivencia y participación.</li>
+            </ul>
+            <p>📌 Puedes leerla en el canal: <strong>#📘│reglas</strong> (¡Te recomendamos revisarla con atención!)</p>
+            <p>✅ A partir de ahora, <strong>todos los miembros deben cumplirla</strong>.</p>
+            <p>⚠️ El incumplimiento de estas normas puede llevar a advertencias o sanciones.</p>
+            <p>Si tienes dudas o sugerencias, no dudes en hablar con el staff.</p>
+            <p>¡Gracias por ser parte de esta comunidad!  💖</p>
+            <p>|| @everyone ||</p>
+
+            <hr>
+            <h3>🌲 Conceptos Básicos de Role-Play de Extremadura RP  🌲</h3>
+            <p>El desconocimiento de esta normativa no te libra de las represalias al no cumplirla.</p>
+            <ul>
+                <li><strong>RDM / RK</strong> (Random Deathmatch / Random Kill): Matar a otro jugador sin justificación dentro del contexto del rol. Ejemplo: disparar a alguien solo porque "te miró mal", sin ningún desarrollo previo.</li>
+                <li><strong>BD</strong> (Bad Driving): Conducir de forma irreal, como ir a alta velocidad por una zona muy estrecha o conducir a altas velocidades por la noche sin luces, conducir saltándose miles de semáforos a altas velocidades y derrapando de forma brusca y en global todo lo que engloba una condición poco realista.</li>
+                <li><strong>VDM</strong> (Vehicle Deathmatch): Usar un vehículo como arma sin motivo, por ejemplo, atropellar a alguien sin ningún tipo de rol previo ni nada.</li>
+                <li><strong>Metagaming</strong>: Usar información que sabes fuera del juego para cambiar decisiones dentro del rol. Ejemplo: reconocer a un personaje solo porque lo viste en Discord y te cae mal y te encuentras en el hipotético caso de que sabes que está en una banda criminal ya que le has mirado los roles y vas a detenerlo por ello, eso será MG.</li>
+                <li><strong>MG2</strong> (Confundir Canales): Usar información de fuera del personaje (OOC) como si fuera dentro del personaje (IC), como hablar por el chat del juego sobre fallos del servidor en medio de un rol.</li>
+                <li><strong>Power-Gaming</strong>: Realizar acciones imposibles o forzadas para tener ventaja. Ejemplo: Bajar/subir el highrock con un coche que no sea 4x4 o offroading con cualquier tipo de vehículo que no sea 4x4, correr por zonas muy rocosas etc.</li>
+                <li><strong>NIP</strong> (Nula Interpretación de Personaje): Actuar de forma que no encaja con tu rol. Ejemplo: que un policía acepte sobornos sin justificación alguna o que colabore con una mafia y cometa crímenes.</li>
+                <li><strong>NLR</strong> (New Life Rule): Tras morir, olvidas todo lo relacionado con el evento de tu muerte. No puedes volver al lugar del incidente ni buscar revancha.</li>
+                <li><strong>Fear-RP</strong>: No mostrar miedo ante amenazas reales. Ejemplo: que alguien te apunte con un arma y tú simplemente salgas corriendo o te pongas a bailar.</li>
+                <li><strong>CK</strong> (Character Kill): Muerte total y permanente de tu personaje. Requiere crear uno nuevo y perder toda la historia anterior.</li>
+                <li><strong>PK</strong> (Partial Kill): Muerte temporal del personaje. Si mueres o quedas inconsciente, olvidas todo lo relacionado con ese hecho.</li>
+                <li><strong>RP</strong> (Roleplay): Es la representación de un personaje dentro del juego, actuando y reaccionando según su historia y personalidad.</li>
+                <li><strong>OOC</strong> (Out of Character): Lo que ocurre fuera del personaje. Ejemplo: hablar sobre el rol que habéis hecho durante el último día en una Escena OOC, recordad que el OOC no se puede mezclar con el IC.</li>
+                <li><strong>IC</strong> (In Character): Todo lo que sucede dentro del rol y la historia de tu personaje.</li>
+                <li><strong>Trolling</strong>: Molestar intencionadamente a otros jugadores. Ejemplo: provocar explosiones cerca de zonas tranquilas sin motivo.</li>
+                <li><strong>Fairplay</strong>: Jugar de forma justa, permitiendo que todos los jugadores tengan una buena experiencia.</li>
+                <li><strong>Entorno</strong>: Notificar por comando (/entorno) cuando se inicia un rol agresivo en zonas públicas. Ejemplo: "/entorno: Varios sujetos armados asaltan una tienda en pleno centro." El entorno lo puede realizar un staff o por el móvil IC.</li>
+                <li><strong>ER</strong> (Evadir Rol): Desconectarse o escapar del juego para evitar un rol en curso, como huir de una persecución cerrando el juego.</li>
+                <li><strong>NVVPJ</strong> (No Valorar la Vida de tu Personaje): Actuar como si tu vida no importara. Ejemplo: Te están apuntando varios sujetos con un arma y tú tienes la maravillosa idea de sacar un arma y disparar.</li>
+                <li><strong>NVVPJ2</strong>: No valorar la vida de tu compañero. Ejemplo: dejarlo abandonado herido en una situación peligrosa sin intentar ayudarlo o ponerlo en peligro en una situación en la que por ejemplo le están apuntando en forma de secuestro y tú disparas al secuestrador.</li>
+            </ul>
+            <p><strong>Firmado: Staff Extremadura Roleplay.</strong></p>
+        </section>
+
+        <footer>
+            <a href="https://yourwebsite.com/normativas" style="color: #64ffda; text-decoration: none;">Enlace a esta página</a>
+            <div style="margin-top: 15px;">
+                © 2023 Normativas de Roleplay - Todos los derechos reservados
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Creamos el efecto de números binarios en el fondo
+        document.addEventListener('DOMContentLoaded', function() {
+            const binaryBg = document.getElementById('binaryBackground');
+            const width = Math.ceil(window.innerWidth / 20); // Ancho en columnas
+            const height = Math.ceil(window.innerHeight / 30); // Altura en filas
+            
+            let binaryText = '';
+            
+            for (let i = 0; i < height; i++) {
+                let line = '';
+                for (let j = 0; j < width; j++) {
+                    line += Math.random() > 0.5 ? '1' : '0';
+                    line += ' ';
+                }
+                binaryText += line + '\n';
+            }
+            
+            binaryBg.textContent = binaryText;
+
+            // Animación para que los números cambien periódicamente
+            setInterval(() => {
+                let newText = binaryText.split('\n').map(line => {
+                    return line.split('').map(char => {
+                        if (Math.random() > 0.98) {
+                            return char === '1' ? '0' : '1';
+                        }
+                        return char;
+                    }).join('');
+                }).join('\n');
+                
+                binaryBg.textContent = newText;
+                binaryText = newText;
+            }, 100);
+        });
+    </script>
+</body>
+</html>
